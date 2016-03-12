@@ -27,7 +27,7 @@
 	<form class="form-inline">
 		<div class="actions">
 			<%= link_to 'Powrót', lists_path, { :class=>"btn btn-default" } %>
-		  <%= f.submit 'Akceptuj', :class => 'btn btn-success' %>
+		  <%= f.submit 'Dodaj', :class => 'btn btn-primary' %>
 		</div>
 	</form>
 

@@ -1,4 +1,4 @@
-<div id="notice" class="alert alert-success" role="alert"><%= notice %></div>
+<p id="notice"><%= notice %></p>
 
 <div class="form-group">
   <strong>Tytuł:</strong>
