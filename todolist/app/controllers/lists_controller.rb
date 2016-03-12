@@ -4,7 +4,8 @@ class ListsController < ApplicationController
   # GET /lists
   # GET /lists.json
   def index
-    @lists = List.all
+    #@lists = List.all
+	@lists = List.paginate(:page => params[:page], :per_page => 5)
   end
 
   # GET /lists/1
@@ -71,4 +72,5 @@ class ListsController < ApplicationController
     def list_params
       params.require(:list).permit(:title, :content, :date)
     end
+
 end
