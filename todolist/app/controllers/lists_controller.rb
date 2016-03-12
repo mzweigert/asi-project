@@ -1,11 +1,12 @@
 class ListsController < ApplicationController
   before_action :set_list, only: [:show, :edit, :update, :destroy]
+	http_basic_authenticate_with name: "admin", password: "admin", except: :index
 
   # GET /lists
   # GET /lists.json
   def index
     #@lists = List.all
-	@lists = List.paginate(:page => params[:page], :per_page => 5)
+		@lists = List.paginate(:page => params[:page], :per_page => 5)
   end
 
   # GET /lists/1
