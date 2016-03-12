@@ -55,4 +55,5 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 	root :to => 'index#index'
+	get 'index/about'
 end

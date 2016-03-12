@@ -28,7 +28,7 @@ class ListsController < ApplicationController
 
     respond_to do |format|
       if @list.save
-        format.html { redirect_to @list, notice: 'List was successfully created.' }
+        format.html { redirect_to @list, notice: 'Czynność została pomyślnie dodana.' }
         format.json { render :show, status: :created, location: @list }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class ListsController < ApplicationController
   def update
     respond_to do |format|
       if @list.update(list_params)
-        format.html { redirect_to @list, notice: 'Czynność została pomyślnie zachowana.' }
+        format.html { redirect_to @list, notice: 'Czynność została pomyślnie zaktualizowana.' }
         format.json { render :show, status: :ok, location: @list }
       else
         format.html { render :edit }
