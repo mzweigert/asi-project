@@ -1,6 +1,4 @@
-== README
-
-ToDo List app
+### ToDo List app
 
 Oprogramowanie | Wersja
 ---------------| -------------
